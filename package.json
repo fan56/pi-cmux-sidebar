@@ -1,0 +1,43 @@
+{
+  "name": "@fliu56/pi-cmux-sidebar",
+  "version": "0.1.0",
+  "description": "Pi extension — cmux right sidebar panel with live TODO/subagent/LSP/MCP status",
+  "author": "fliu56",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "cmux",
+    "terminal",
+    "sidebar",
+    "status"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fliu56/pi-cmux-sidebar.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit --module NodeNext --moduleResolution NodeNext --target ES2022 --allowImportingTsExtensions --skipLibCheck --strict extensions/*.ts"
+  },
+  "files": [
+    "extensions/",
+    "scripts/",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
